@@ -1,0 +1,45 @@
+* {
+    font-family: 'Swanky and Moo Moo', cursive;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    font-size: 100px;
+    color: lightseagreen;
+}
+.players {
+ 
+}
+
+.score {
+    font-size: 25px;
+    color: #fc1e94;
+    display: grid;
+    grid-template-columns: auto 100px auto 100px;
+    margin: auto;
+    width: 420px;
+}
+.container {
+    text-align: center;
+    border: 5px double #f7a0ce;
+    padding: 50px;
+    position: relative;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: 400px;
+    cursor: crosshair;
+}
+
+
+
+#square1, #square2, #square4, #square5, #square7, #square8 {
+    border-right: 5px solid lightseagreen;
+}
+#square1, #square2, #square3, #square4, #square5, #square6 {
+    border-bottom: 5px solid lightseagreen;
+}
