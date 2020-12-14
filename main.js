@@ -19,7 +19,7 @@ function getWinner() {
     winningMoves.forEach(function(combo, index) {
         if (board[combo[0]] && board[combo[0]] === board[combo[1]] && board[combo[0]] === board[combo[2]]) winner = board[combo[0]];
         });
-        return winner ? winner : board.includes('') ? null : 'T';
+        return winner ? winner : board.includes('') ? null : 'tie';
 };
 
 function gameOver() {
@@ -52,16 +52,16 @@ function gamePlay() {
     squares[index].textContent = mark;
     });
 
-    statusMsg.textContent = win === 'T' ? `it's a TIE!` : win ? `${win} is the winner !` : `It's ${currentPlayer}'s turn!`;
+    statusMsg.textContent = win === 'tie' ? `it's a TIE!` : win ? `${win} is the winner !` : `It's ${currentPlayer}'s turn!`;
     
     };
 
 function play () {
+    event.preventDefault();
     let firstPlayer = document.getElementById("player1").value;
     let secondPlayer = document.getElementById("player2").value;    
     document.getElementById("firstPlayer").innerText = firstPlayer+":";
     document.getElementById("secondPlayer").innerText = secondPlayer+":";
-    document.getElementById("score").style.display = "block";
 }
 
 start();
