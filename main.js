@@ -53,20 +53,15 @@ function gamePlay() {
     });
 
     statusMsg.textContent = win === 'T' ? `it's a TIE!` : win ? `${win} is the winner !` : `It's ${currentPlayer}'s turn!`;
-    theScore = statusMsg.textContent
-    if (theScore = "X is the winner !") {
-        console.log("hello winner")
-    }else {
-        console.log("you are not winner")
-    }
+    
     };
 
 function play () {
-    event.preventDefault();
     let firstPlayer = document.getElementById("player1").value;
     let secondPlayer = document.getElementById("player2").value;    
     document.getElementById("firstPlayer").innerText = firstPlayer+":";
     document.getElementById("secondPlayer").innerText = secondPlayer+":";
+    document.getElementById("score").style.display = "block";
 }
 
 start();
