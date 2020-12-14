@@ -27,12 +27,13 @@ button:hover {
 
 #credit {
     font-family: 'Swanky and Moo Moo', cursive;
-    font-size: 30px;
+    font-size: 20px;
     text-align: right;
     position: fixed;
     bottom: 1px;
     right: 40px;
     color: #ffffff;
+    border-radius: 3px;
     background-color: #f12893;
 }
 
