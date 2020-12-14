@@ -55,15 +55,15 @@ function gamePlay() {
     squares[index].textContent = mark;
     });
 
-    statusMsg.textContent = win === 'tie' ? `it's a TIE!` : win ? `Player ${win} is the winner !` : `It's ${currentPlayer}'s turn!`;
+    statusMsg.textContent = win === 'tie' ? `play again, it's a TIE !` : win ? `${win} is the winner !` : `it's now ${currentPlayer}'s turn`;
     };
 
 function play () {
     event.preventDefault();
     let firstPlayer = document.getElementById("player1").value;
     let secondPlayer = document.getElementById("player2").value;    
-    document.getElementById("firstPlayer").innerText = firstPlayer + " is player X";
-    document.getElementById("secondPlayer").innerText = secondPlayer + " is player O";
+    document.getElementById("firstPlayer").innerText = firstPlayer + " is X";
+    document.getElementById("secondPlayer").innerText = secondPlayer + " is O";
 }
 
 start();
