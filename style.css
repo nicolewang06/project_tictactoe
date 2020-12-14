@@ -37,10 +37,10 @@ p {
 
 .container {
     border: 5px double #f12893;
-    height: 580px;
+    height: 550px;
     width: 900px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     
 }
 
