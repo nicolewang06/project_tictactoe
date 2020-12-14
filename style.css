@@ -1,6 +1,7 @@
 body {
     font-family: 'Comfortaa', cursive;
     text-align: center;
+    background-image: url('https://wallpaperaccess.com/full/2078988.jpg');
 }
 
 h1 {
@@ -35,14 +36,14 @@ p {
 
 .score {
     color: #f12893;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #gameInfo {
     width: 35%;
     float: right;
-    padding-right: 20px;
-    padding-top: 35px;
-    margin: 0;
+    padding-top: 50px;
     text-align: left;
 }
 
@@ -50,10 +51,11 @@ p {
 .container {
     border: 5px double #f12893;
     height: 570px;
-    width: 900px;
+    width: 850px;
     margin: auto;
     margin-top: 20px;
-    
+    background-color: #ffffff;
+    opacity: 0.9;    
 }
 
 #board {
@@ -64,7 +66,6 @@ p {
     float: left;
     padding-left: 50px;
     color: #f12893;
-
 }
 
 .square {
