@@ -7,7 +7,6 @@ let oScore = 0;
 let firstPlayer;
 let secondPlayer;
 
-
 const winningMoves = [ [0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6] ];
 const squares = Array.from(document.querySelectorAll('#board div'));
 const statusMsg = document.getElementById('status');
@@ -15,7 +14,35 @@ const statusMsg = document.getElementById('status');
 document.getElementById('board').addEventListener('click', handleTurn);
 document.getElementById('restart').addEventListener('click', start);
 
+function play () {
+    event.preventDefault();
+    let firstPlayer = document.getElementById("player1").value;
+    let secondPlayer = document.getElementById("player2").value;    
+    document.getElementById("firstPlayer").innerText = firstPlayer + " is X";
+    document.getElementById("secondPlayer").innerText = secondPlayer + " is O";
+}
 
+function start() {
+    board = [ '', '', '', '', '', '', '', '', '' ];
+    gamePlay();
+};
+
+function gamePlay() {
+    board.forEach(function(mark, index) {
+    squares[index].textContent = mark;
+});
+    statusMsg.textContent = win === 'tie' ? `play again, it's a TIE !` : win ? `${win} is the winner !` : `it's now ${currentPlayer}'s turn`;
+};
+
+function handleTurn() {
+    let idx = squares.findIndex(function(square) {
+        return square === event.target;
+    });
+    board[idx] = currentPlayer;
+    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+    win = getWinner();
+    gamePlay();
+};
 
 function getWinner() {
     let winner = null;
@@ -31,40 +58,8 @@ function gameOver() {
     }
 }
 
-function handleTurn() {
-    let idx = squares.findIndex(function(square) {
-        return square === event.target;
-    });
-    board[idx] = currentPlayer;
-    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-    win = getWinner();
-    gamePlay();
-};
-
 function computerPlayer(board) {
     
 }
 
-function start() {
-    board = [ '', '', '', '', '', '', '', '', '' ];
-    gamePlay();
-};
-
-function gamePlay() {
-    board.forEach(function(mark, index) {
-    squares[index].textContent = mark;
-    });
-
-    statusMsg.textContent = win === 'tie' ? `play again, it's a TIE !` : win ? `${win} is the winner !` : `it's now ${currentPlayer}'s turn`;
-    };
-
-function play () {
-    event.preventDefault();
-    let firstPlayer = document.getElementById("player1").value;
-    let secondPlayer = document.getElementById("player2").value;    
-    document.getElementById("firstPlayer").innerText = firstPlayer + " is X";
-    document.getElementById("secondPlayer").innerText = secondPlayer + " is O";
-}
-
 start();
-
