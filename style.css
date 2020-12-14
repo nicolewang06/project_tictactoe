@@ -25,13 +25,16 @@ button:hover {
     color: #f12893;
 }
 
-p {
+#credit {
     font-family: 'Swanky and Moo Moo', cursive;
-    font-size: 25px;
+    font-size: 30px;
     text-align: right;
     position: fixed;
-    bottom: -5px;
+    bottom: 1px;
     right: 40px;
+    color: #084285;
+    background-color: #ffffffc4;
+    border-radius: 8px;
 }
 
 .score {
