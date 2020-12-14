@@ -6,39 +6,44 @@
     <title>Project_ Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>TIC TAC TOE</h1>
-        <div class="players">
-            <form>
-                <input type="text" id="player1" value="Player 1">
-                <input type="text" id="player2" value="Computer">
-                <button onclick="play()">&nbsp let's play &nbsp</button>
-                <button onclick="restart()">&nbsp restart &nbsp</button>
-            </form>
-        </div><br>
-        <div class="score">
-            <div id="firstPlayerName">Player 1:</div>
-            <div id="player1Score">0</div>
-            <div id="secondPlayerName">Computer:</div>
-            <div id="player2Score">0</div>
-        </div><br>
+        <h2 id="intro"></h2>
 
-        <h2 class="gameStatus"></h2>
-
-        <div class="board">
-            <div data-cell-index="0" id="square1" onclick="squareClicked(this.id)"></div>
-            <div data-cell-index="1" id="square2" onclick="squareClicked(this.id)"></div>
-            <div data-cell-index="2" id="square3" onclick="squareClicked(this.id)"></div>
-            <div data-cell-index="3" id="square4" onclick="squareClicked(this.id)"></div>
-            <div data-cell-index="4" id="square5" onclick="squareClicked(this.id)"></div>
-            <div data-cell-index="5" id="square6" onclick="squareClicked(this.id)"></div>
-            <div data-cell-index="6" id="square7" onclick="squareClicked(this.id)"></div>
-            <div data-cell-index="7" id="square8" onclick="squareClicked(this.id)"></div>
-            <div data-cell-index="8" id="square9" onclick="squareClicked(this.id)"></div>
+        <div id="board" class="board">
+            <div class="square" id="square1"></div>
+            <div class="square" id="square2"></div>
+            <div class="square" id="square3"></div>
+            <div class="square" id="square4"></div>
+            <div class="square" id="square5"></div>
+            <div class="square" id="square6"></div>
+            <div class="square" id="square7"></div>
+            <div class="square" id="square8"></div>
+            <div class="square" id="square9"></div>
         </div>
+
+        <div id="gameInfo">
+
+            <div class="players">
+                <form>
+                    <input type="text" id="player1" value="Player 1"><br>
+                    <input type="text" id="player2" value="Computer"><br><br>
+                    <button onclick="play()">&nbsp let's play &nbsp</button>
+                    <button id="restart">&nbsp restart &nbsp</button>
+                </form>
+                <br><br>
+                    <div class="score">
+                        <div id="firstPlayer">Player 1: </div>
+                        <div id="secondPlayer">Computer: </div>
+                    </div>
+            </div>
+        </div>
+        
     </div>
+    <p id="credit">-- Nicole Wang</p>
     <script src="main.js"></script>
 </body>
 </html>
