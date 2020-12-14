@@ -32,9 +32,8 @@ button:hover {
     position: fixed;
     bottom: 1px;
     right: 40px;
-    color: #084285;
-    background-color: #ffffffc4;
-    border-radius: 8px;
+    color: #ffffff;
+    background-color: #f12893;
 }
 
 .score {
