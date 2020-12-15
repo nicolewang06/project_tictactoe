@@ -24,6 +24,7 @@ function play () {
     document.getElementById("firstPlayer").style.animation = "bounceIn 2s";
     document.getElementById("secondPlayer").innerText = secondPlayer + " is O";
     document.getElementById("secondPlayer").style.animation = "bounceIn 2s";
+    start();
 }
 
 function start() {
@@ -50,8 +51,6 @@ function handleTurn() {
     gamePlay();
     // if ([idx]) has X's in winningMoves, draw a line through the squares and alert winner
     if (win === "X" || win === "O") {
-        
-        console.log(squares[idx])
         gameOver();
     }
 };
@@ -63,8 +62,6 @@ function getWinner() {
         if (board[move[0]] && board[move[0]] === board[move[1]] && board[move[0]] === board[move[2]]) winner = board[move[0]];
         });
         return winner ? winner : board.includes('') ? null : 'tie';
-        
-        
 };
 
 function gameOver() {
@@ -72,7 +69,7 @@ function gameOver() {
         active = 0;
         document.getElementById('board').removeEventListener('click', handleTurn, false);
         alert(`${win} is the winner. play again ?`);
-        // start();
+        start();
     }
 
 
