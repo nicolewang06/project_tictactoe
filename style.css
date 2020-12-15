@@ -81,8 +81,7 @@ button:hover {
 .score {
     color: #f12893;
     font-weight: bold;
-    font-size: 20px;
-    
+    font-size: 20px;   
 }
 
 
@@ -90,7 +89,7 @@ button:hover {
     border-left: 5px double #f12893;
     border-right: 5px double #f12893;
     border-bottom: 5px double #f12893;
-    height: 300px;
+    height: 120vmin;
     background-color: #ffffff;
     opacity: 0.9;
     padding: 3vmin;
