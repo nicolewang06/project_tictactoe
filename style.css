@@ -94,7 +94,7 @@ button:hover {
     border-left: 5px double #f12893;
     border-right: 5px double #f12893;
     border-bottom: 5px double #f12893;
-    height: 120vmin;
+    height: 100%vmin;
     background-color: #ffffff;
     opacity: 0.9;
     padding: 3vmin;
