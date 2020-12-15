@@ -33,6 +33,7 @@ h1 {
     opacity: 0.9;
     padding: 3vmin;
     margin: auto;
+    margin-top: 25px;
     width: 80vmin;
 }
 
@@ -56,6 +57,7 @@ button {
 button:hover {
     font-size: 15px;
     color: #f12893;
+    border-color: #20b2aa;
 }
 
 #credit {
@@ -114,7 +116,7 @@ button:hover {
 
 .square:hover {
     cursor: crosshair;
-    background-color: #f128933f;
+    background-color: #20b2ab60;
 }
 
 #square1, #square2, #square4, #square5, #square7, #square8 {
