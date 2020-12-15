@@ -15,10 +15,10 @@
 body {
     font-family: 'Comfortaa', cursive;
     text-align: center;
-    background-image: url("https://wallpaperaccess.com/full/2078988.jpg");
     background-color: #ffffffa1;
     background-blend-mode: lighten; 
     display: block;
+    background-image: url("https://wallpaperaccess.com/full/2078988.jpg");
     background-size: cover;
     height: 100vh;
 }
