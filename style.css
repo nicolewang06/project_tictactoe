@@ -18,7 +18,8 @@ body {
     background-image: url('https://wallpaperaccess.com/full/2078988.jpg');
     background-color: #ffffffa1;
     background-blend-mode: lighten;   
-    display: block; 
+    display: table; 
+    width: 100%;
 }
 
 h1 {
