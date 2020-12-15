@@ -19,8 +19,8 @@ document.getElementById('restart').addEventListener('click', start);
 
 function play () {
     event.preventDefault();
-    let firstPlayer = document.getElementById("player1").value;
-    let secondPlayer = document.getElementById("player2").value;    
+    let firstPlayer = document.getElementById("player1").value.toUpperCase();
+    let secondPlayer = document.getElementById("player2").value.toUpperCase();    
     document.getElementById("firstPlayer").innerText = firstPlayer + " is X";
     document.getElementById("firstPlayer").style.animation = "bounceIn 2s";
     document.getElementById("secondPlayer").innerText = secondPlayer + " is O";
@@ -69,8 +69,8 @@ function gameOver() {
     //for (var i = 0; i < squares.length; i++) {
         active = 0;
         document.getElementById('board').removeEventListener('click', handleTurn, false);
-        let firstPlayer = document.getElementById("player1").value;
-        let secondPlayer = document.getElementById("player2").value;
+        let firstPlayer = document.getElementById("player1").value.toUpperCase();
+        let secondPlayer = document.getElementById("player2").value.toUpperCase();
         if (win === "X")   {
             theWinner = firstPlayer
         }else {
