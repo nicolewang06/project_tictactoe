@@ -76,7 +76,7 @@ function gameOver() {
         }else {
             theWinner = secondPlayer
         }
-        alert(`${theWinner} is the Tic Tac Toe winner !!  play again ?`);
+        alert(`🏆 ${theWinner} is the Tic Tac Toe winner !!  play again ?`);
         start();
     }
 
