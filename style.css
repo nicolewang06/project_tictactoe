@@ -1,22 +1,55 @@
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
 body {
     font-family: 'Comfortaa', cursive;
     text-align: center;
     background-image: url('https://wallpaperaccess.com/full/2078988.jpg');
+    background-color: #ffffffa1;
+    background-blend-mode: lighten;    
 }
 
 h1 {
-    color: #20b2aa;
+    color: #112a7c;
+    font-size: 50px;
+}
+
+#header {
+    border-top: 5px double #f12893;
+    border-right: 5px double #f12893;
+    border-left: 5px double #f12893;
+    background-color: #ffffff;
+    opacity: 0.9;
+    padding: 3vmin;
+    margin: auto;
+    width: 80vmin;
 }
 
 #status {
-    color: #a3a1a1;
+    color: #e624e6;
+    font-size: 30px;
+    text-shadow: 2px 2px;
+    border: 3px dashed #20b2aa;
+    width: 60%;
+    margin: auto;
 }
 
 button {
     background-color: white;
-    border-color: #20b2aa;
+    border-color: #112a7c;
     font-family: 'Comfortaa', cursive;
-    color: #20b2aa;
+    color: #112a7c;
     border-radius: 8px;
 }
 
@@ -37,57 +70,56 @@ button:hover {
     background-color: #f12893;
 }
 
+#gameInfo {
+    margin: auto;
+    width: 88%;
+    height: 100%;
+}
+
 .score {
     color: #f12893;
     font-weight: bold;
     font-size: 20px;
-}
-
-#gameInfo {
-    width: 35%;
-    float: right;
-    padding-top: 50px;
-    text-align: left;
+    
 }
 
 
 .container {
-    border: 5px double #f12893;
-    height: 570px;
-    width: 850px;
-    margin: auto;
-    margin-top: 20px;
+    border-left: 5px double #f12893;
+    border-right: 5px double #f12893;
+    border-bottom: 5px double #f12893;
+    height: 300px;
     background-color: #ffffff;
-    opacity: 0.9;    
+    opacity: 0.9;
+    padding: 3vmin;
+    margin: auto;
+    width: 80vmin;
 }
 
 #board {
     font-family: 'Swanky and Moo Moo', cursive;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 40%;
     float: left;
     padding-left: 50px;
+    padding-top: 20px;
     color: #f12893;
 }
 
 .square {
-    height: 140px;
-    width: 140px;
-    font-size: 99px;
-    align-items: center;
-    justify-content: center;
+    height: 75px;
+    width: 75px;
+    font-size: 50px;
 } 
 
 .square:hover {
     cursor: crosshair;
-    background-color: #a3a1a14b;
+    background-color: #f128933f;
 }
 
 #square1, #square2, #square4, #square5, #square7, #square8 {
-    border-right: 5px solid #20b2aa;
+    border-right: 5px solid #112a7c;
 }
 #square1, #square2, #square3, #square4, #square5, #square6 {
-    border-bottom: 5px solid #20b2aa;
+    border-bottom: 5px solid #112a7c;
 } 
-
