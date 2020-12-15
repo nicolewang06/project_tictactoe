@@ -116,7 +116,7 @@ button:hover {
 
 .square:hover {
     cursor: crosshair;
-    background-color: #20b2ab60;
+    background-color: #20b2abb0;
 }
 
 #square1, #square2, #square4, #square5, #square7, #square8 {
