@@ -4,7 +4,7 @@ Game_
 Tic Tac Toe
 
 Rules_
-First player to get 3 in a row wins.
+First player to get 3 in a row wins
 Two player game 
 
 Design Choices / Wireframe_
@@ -17,3 +17,8 @@ Bottom right side will have creator name
 
 Description of Game_
 Taking turns clicking empty spaces to mark X's and O's on a board, the first to get 3 in a row wins.
+
+
+
+IMPORTANT_
+Please play Tic Tac Toe game using Chrome. (Not fully functional on Internet Explorer or Mozilla Firefox)
