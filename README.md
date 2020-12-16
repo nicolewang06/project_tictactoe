@@ -13,7 +13,7 @@ The right side of the board has text boxes to enter specific names of players; t
 The "restart" button resets the board and player names.
 
 Credits_
-Bottom right side of board will have creator name
+Bottom right side will have creator name
 
 Description of Game_
 Taking turns clicking empty spaces to mark X's and O's on a board, the first to get 3 in a row wins.
